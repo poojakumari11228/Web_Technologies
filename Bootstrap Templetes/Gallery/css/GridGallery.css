@@ -1,0 +1,22 @@
+body{  
+    padding: 70px;
+    margin:  auto;
+    background: black
+}
+.navbar-inverse{
+background: #2c3e50
+}
+.jumbotron{
+    color: #50342c;
+    background: #ecf0f1;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: white
+}
+.navbar-inverse .navbar-brand{
+    color: white;
+}
+
+{/*https://unsplash.com/photos/tDfE0hwtEwg
+    
+    */}
