@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+<link rel="stylesheet" type="text/css" href="TicTacToe.css">
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div>
+<h1>Tic Tac Toe</h1>
+<h1 id='win'></h1>
+<p><label id='player1'>Player1: </label><img src="tick.png"> <label  id='player2'>Player2:</label><img src="cross.png"> </p>
+    </div>
+<div>
+    <table align="center">
+        <tr>  
+         <td id="00" onclick="tract_box(this)"></td> 
+         <td id="01" onclick="tract_box(this)"></td> 
+         <td id="02" onclick="tract_box(this)"></td>   
+         </tr>
+        
+        <tr>  
+         <td id="10" onclick="tract_box(this)"></td>
+         <td id="11" onclick="tract_box(this)"></td>  
+         <td id="12" onclick="tract_box(this)"></td>    
+        </tr>
+     
+        <tr>
+         <td id="20" onclick="tract_box(this)"></td>
+         <td id="21" onclick="tract_box(this)"></td>
+         <td id="22" onclick="tract_box(this)"></td> 
+        </tr>    
+    </table>
+</div>
+
+<script type="text/javascript" src="TicTacToe.js"> 
+   </script>
+</body>
+</html>

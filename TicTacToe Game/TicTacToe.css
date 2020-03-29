@@ -1,0 +1,32 @@
+h1,p{
+    font-weight: bold;
+    text-align: center;
+}	
+body{
+    background: pink;
+}
+tr,td{
+    height: 100px;
+    width: 100px;
+
+}
+div:nth-of-type(2) td:nth-of-type(2){
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+div:nth-of-type(2) tr:nth-of-type(2) td{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;    
+}
+
+.tick{
+	background: url('tick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cross{
+	background: url('cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*    background: darksalmon;*/
