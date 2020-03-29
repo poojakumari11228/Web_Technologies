@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css selectors</title>
+    <style>
+   
+    /* adjacent sibling */
+    h2 + h3{
+        background-color: rebeccapurple;
+    }
+    /* pseudo class  */
+    a:link{ 
+        /* unvisited */
+        color:red
+    }
+    a:visited{
+        /* visited */
+        color: rgb(65, 182, 147);
+       
+    }
+    a:active{
+        background-color: rebeccapurple;
+    }
+    a:hover{
+        color: salmon;
+    }
+    
+    input:focus{
+        background-color: red;
+    }
+
+    input:checked{
+        margin-left: 30px;
+        /*  color not applied because the text is outside of radio */
+        background-color: red;
+    }
+
+    /* pseudo elements */
+    div :first-child::first-letter{   
+        color: red;
+    }
+
+    div::after{
+        content: "added through property";
+    }
+    div::before{
+        content: "added through property";
+    }
+
+    /* Attribute selecttion */
+    /* ~ for space separated class / multiple classes assigned */
+   input[class="newclass"]{
+       background-color: red;
+   }
+    </style>
+</head>
+<body>
+    <article >
+        <p>paragragh</p>
+        <h1 class="h1_class">new heading</h1>
+        <h2 id="myid">
+            second heading
+        </h2>
+        <h1 class="h1_class"> another heading</h1>
+    </article>
+
+    <div>
+        <h1>WE</h1>
+        <p>my new paragraph of div</p>
+    </div>
+
+    <article>
+            <p>Hello from p1</p>
+            <h2> this is h2 tag after p1 
+                <p>this is p2 inside of h2 
+                    <h3>this is h3 inside of p2</h3>
+                    <div>this is div inside of p2
+                        <p>this is p3 inside of div</p>
+                        <h4>this is a sub heading
+                            <p>this is p4</p>
+                        <h4>
+                    </div>
+                </p>
+            </h2>
+            <h3>h3 adjacent to h2</h3>
+            </article>
+
+    <a href="https://www.google.com/">google</a><br>
+
+    <input type="text" placeholder="enter your name"> <br>
+    
+    <input  class="newclass" type="text" placeholder="enter your name"> <br>
+
+    <input type="radio" placeholder="radio button">radio button</input>
+    
+    <div >
+    <p>randon text start</p>
+    <p>The we lab</p>
+    <p>random text end</p>
+    </div>
+
+</body>
+</html>
