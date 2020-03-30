@@ -1,4 +1,4 @@
-# Php suports functin overloading in a different way!
+# Php suports function overloading in different ways!
 
 **Two of which are:**
 
