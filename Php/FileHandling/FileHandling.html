@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>File Handling</h1>
+    
+<form action="FileHandling.php" method="POST" enctype="multipart/form-data"> 
+
+    <input type="file" name="upload" />
+
+    <div style="display: flex; " >
+        
+        <!-- read -->
+            <div style="border: 2px solid black; margin: 5px; width: 500px;height: 350px; padding: 2px;">
+                <h1>File Read</h1>
+                <input type="submit" value="Read From File" name="read-submit"/>
+            </div>
+      <!-- write -->
+            <div style="border: 2px solid black; margin: 5px; width: 500px;height: 350px; padding: 2px;">
+                <h1>File Write</h1>
+                <textarea id="write" name="write" style="width:-webkit-fill-available; height: 200px;"></textarea><br>
+                <input type="submit" value="Write into File"  name="write-submit"/>
+            </div>
+        <!-- Copy rename and delete  -->
+        <div style="border: 2px solid black; margin: 5px; width: 500px;height: 350px; padding: 2px;">
+            <h1>Copy Rename and delete File</h1>
+            <input type="submit" value="submit"  name="crd-submit"/>
+        </div>
+        
+    </div>
+</form>
+
+</body>
+
+</html>
